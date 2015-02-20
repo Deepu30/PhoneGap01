@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Phongap</title>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>       
+ <script type="text/javascript">
+ 
+   var displayHello  = function () {
+			var name =      document.getElementById("firstname").value;
+			if(name == ""){
+			alert("name" + name);
+			}
+			var lasttname =      document.getElementById("lasttname").value;
+			if(lasttname == ""){
+			alert("lasttname" + lasttname);
+			}
+			var email =      document.getElementById("email").value;
+			if(email == ""){
+			alert("email" + email);
+			}
+			var phoneno =      document.getElementById("phoneno").value;
+			if(phoneno == ""){
+			alert("phoneno" + phoneno);
+			}
+			var tel =      document.getElementById("tel").value;
+			if(tel == ""){
+			alert("tel" + tel);
+			}
+            }      
+			</script>     
+</head>
+
+<body>
+	<!--<button id ="phone"> Doit </button>
+    <button id ="clear"> Clear </button>
+    <div id="result"></div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/phone.js"></script>
+    <script>
+	$('#phone').click(function(){
+		PHONE.Doit($('#result'));
+	});
+	$('#clear').click(function(){
+		$('#result').html('');
+	});
+	</script>-->
+<input type="text" name="firstname" id="firstname" />
+<input type="text" name="lasttname" id="lasttname" />
+<input type="email" name="email" id="email" />
+<input type="text" name="phoneno" id="phoneno" />
+<input type="tel" name="tel" id="tel" />
+<input type="color" name="color" id="color" />
+<input type="file" name="file" id="file" />
+<input type="hidden" name="hidden" id="hidden" />
+<input type="image" name="image" id="image" />
+<input type="month" id="myMonth">
+<input type="number" name="number" id="number" />
+<input type="range" name="range" id="range" />
+
+<a href="#" class="btn" onclick="displayHello()">Say Hello</a>
+</body>
+</html>
